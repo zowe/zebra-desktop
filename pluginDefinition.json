@@ -1,0 +1,24 @@
+{
+  "identifier": "org.zowe.zebra.iframe",
+  "apiVersion": "1.0.0",
+  "pluginVersion": "1.0.0",
+  "license": "EPL-2.0",
+  "pluginType": "application",
+  "webContent": {
+    "framework": "iframe",
+    "standaloneUseFramework": true,
+    "launchDefinition": {
+      "pluginShortNameKey": "Zebra",
+      "pluginShortNameDefault": "Zebra",
+      "imageSrc": "z-logo.png"
+    },
+    "descriptionKey": "Zebra Zowe Desktop Application",
+    "descriptionDefault": "Zebra Zowe Desktop Application",
+    "startingPage": "index.html",
+    "isSingleWindowApp": true,
+    "defaultWindowStyle": {
+      "width": 1000,
+      "height": 600
+    }
+  }
+}

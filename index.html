@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zebra</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ZEBRA</h1>
+        <div class="nav-link-container">
+            <a href="#lpar">LPAR Utilisation</a>
+            <a href="#cpu">CPU Utilisation</a>
+            <a href="#job">Job Time</a>
+        </div>
+    </header>
+    <section id="lpar">
+        <h1>LPAR Utilisation</h1>
+        <div class="graph-container">
+            <canvas id="lparUtilisationGraph"></canvas>
+        </div>
+        <div class="checklist-container" id="lparChecklistContainer"></div>
+    </section>
+    <section id="cpu">
+        <h1>CPU Utilisation</h1>
+        <div class="graph-container">
+            <canvas id="cpuUtilisationGraph"></canvas>
+        </div>
+        <div class="checklist-container" id="cpuChecklistContainer"></div>
+    </section>
+    <section id="job">
+        <h1>Job Utilisation</h1>
+        <div class="graph-container">
+            <canvas id="jobUsageGraph"></canvas>
+        </div>
+        <div class="checklist-container" id="usageChecklistContainer"></div>
+    </section>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./js/LparUtilisation.js"></script>
+<script src="./js/cpuUtilisation.js"></script>
+<script src="./js/jobUsage.js"></script>
+
+</html>
